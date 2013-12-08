@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        <style type="text/css">
+        #Text1
+        {
+            width: 53px;
+        }
+        #Text2
+        {
+            width: 47px;
+        }
+        #Button1
+        {
+            margin-bottom: 0px;
+        }
+        #Select1
+        {
+            width: 109px;
+        }
+		.iss {
+			background-color: yellow;
+		}
+		.nos {
+			background-color: white;
+		}
+		.head {
+			background-color: green;
+		}
+		.ans {
+			background-color: blue;
+		}
+		.selans {
+			background-color: red;
+		}
+    </style>
+    <script type="text/javascript" src="qunit-1.12.0.js"></script>
+    <script type="text/javascript" src="myJS (2).js"></script>
+    <script type="text/javascript" src="test.js"></script>
+    <script type="text/javascript" src="jquery-1.10.2.js"></script>
+    <link href="qunit-1.12.0.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1 id="qunit-header">QUnit Test Suite</h1>
+    <h2 id="qunit-banner"></h2>
+	    <div id="qunit-testrunner-toolbar"></div>
+	    <h2 id="qunit-userAgent"></h2>
+	    <ol id="qunit-tests"></ol>
+        <p>
+输入矩阵大小: 
+        <input id="Text1" type="text" value="1"/>&nbsp;
+        <input id="Text2" type="text" value="1"/>&nbsp;&nbsp;
+        <input id="Button1" type="button" value="确定" />
+        <input id="Button2" type="button" value="随机生成" />&nbsp;&nbsp;
+		<input id="Start" type="button" value="Start" />
+		<input id="Pause" type="button" value="Pause" />
+            <input id="test" type="button" value="test" />
+	</p>
+        <p>>请选择模式：<select id="Select1" name="D1">
+            <option value="mode1">MODE1</option>
+            <option value="mode2">MODE2</option>
+             <option value="mode3">MODE3</option>
+              <option value="mode4">MODE4</option>
+              <option value="mode5">MODE5</option>
+              <option value="mode6">MODE6</option>
+             <option value="mode7">MODE7</option>
+        </select></p>
+    <p><input id="prev" type="button" value="<<"/>
+		<input id="next" type="button" value=">>"/>
+	</p>
+	<p>
+	<textarea id="UserText" name="UserText" wrap="VIRTUAL" style="width:327px; height: 162px;">"#1#1#2#"</textarea>
+		<input id="Submit" type="button" value="submit"/></P>
+		<p>最大值：<label id="maxnum">-999999</label></p>
+
+
+    <div id="table"></div>
+	
+</body>
+</html>
